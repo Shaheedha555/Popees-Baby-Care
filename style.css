@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: "Nunito sans", sans-serif;
+ text-align: center;
+ /* width: 100vw; */
+
+}
+h2{
+ margin: 35px;
+ letter-spacing: 5px;
+ font-weight: lighter;
+ text-transform: uppercase;
+color: gray;
+}
+
+/* NAVIGATION BAR  */
+
+header{
+ height: 80px;
+ background-color: white;
+ display: flex;
+ justify-content: space-between;
+ padding: 15px 0;
+}
+.logo{
+    height: 45px;
+    padding:0 40px 0 30px ;
+}
+.search{
+    display: flex;
+}
+.search-box{
+    height: 50px;
+    width: 450px;
+    background: rgb(241, 236, 236);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px thin black;
+}
+button .fa{
+    font-size: 22px;
+    padding: 10px ;
+    color: black;
+}
+.search button{
+    border: transparent;
+}
+.search-box input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 15px;
+}
+ .tags li{
+    display: inline;
+    list-style: none;
+    padding-right: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.tags li a:hover{
+    color: rgb(248, 99, 124);
+}
+
+.icons li{
+    display: inline;
+    font-size: 22px;
+    color: black;
+}
+.icons li a:hover{
+    color: rgb(83, 83, 83);
+}
+li a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav{
+    padding-top:18px;
+    display: flex;
+}
+
+.images{
+    width: 100%;
+    height: 100vh;
+}
+.images img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.images img:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* PRODUCTS */
+
+
+.products{
+    margin-top: 150px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+
+}
+.item img{
+    width: 280px;
+    padding: 20px;
+}
+.items img:hover{
+    cursor: pointer;
+    width: 290px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+
+}
+.items p{
+    line-height: 2;
+}
+.products span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* CATEGORIES */
+
+
+.categories{
+    margin-top: 150px;
+}
+.img-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.row{
+    width: 100%;
+    display: flex;
+}
+.size1{
+    width: 440px;
+    height: 400px;
+    position: relative;
+
+}
+.size2{
+    width: 300px;
+    height: 400px;
+    position: relative;
+
+}
+.categories img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+.categories img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease;
+
+}
+.categories p{
+    font-size: 12px;
+    padding: 4px 10px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    text-transform: uppercase;   
+}
+
+
+/* SKIN CARE & BAG */
+
+
+.skincare-bag{
+    margin-top: 150px;
+    width: 100%;
+}
+.skinbag{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+.skin-bag{
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+}
+.skin-bag img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.skin-bag img:hover{
+    cursor: pointer;
+    width: 250px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+.skin-bag p{
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 2;
+}
+.skin-bag span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* MORE TO EXPLORE */
+
+
+.show-more{
+    width: 125px;
+    padding: 10px 12px;
+    margin-top: 100px;
+    border: 1px solid rgb(247, 119, 147);
+    background-color: rgb(245, 139, 125);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.show-more:hover{
+    border: thin solid rgb(247, 119, 147);
+    background-color: white;
+    color: rgb(247, 119, 147);
+    transition: 0.5s ease;
+}
+
+.more{
+    margin-top: 50px;
+
+}
+.more-pics{
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+.more-img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+}
+.more-img img{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    object-fit: cover;
+}
+.more-img img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease;
+
+}
+.more-img p {
+    font-size: 12px;
+    padding: 4px 10px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    text-transform: uppercase;
+}
+
+/* WHY POPEES */
+
+
+.why{
+    position: relative;
+    margin-top: 100px;
+}
+.why img{
+    width: 100%;
+
+}
+.ypopees{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: rgb(207, 144, 144);
+    box-shadow: 4px 2px 15px rgb(127 127 127 / 20%);
+    font-weight: 600;
+    padding-top: 14px;
+    position: absolute;
+    left: 550px;
+    top: -30px;
+}
+
+
+/* ABOUT */
+
+
+.about{
+margin: 30px 60px;
+padding: 10px 50px;
+line-height: 2rem;
+font-size: 20px;
+color: rgb(124, 121, 121);
+}
+.about a{
+    text-decoration: none;
+    color: black;
+}
+.about a:hover{
+    color: orange;
+}
+.abt-head{
+    width: 170px;
+    height: 60px;
+    border-radius: 25px;
+    color: rgb(207, 144, 144);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 4px 2px 15px rgb(127 127 127 / 20%);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px;
+    
+}
+.abt-head:hover{
+    cursor: pointer;
+}
+
+/* MORE */
+
+
+.for-more{
+    margin:80px 20px 20px;
+    padding: 15px;
+}
+.for-more img{
+    width: 650px;
+}
+.for-more .para{
+    text-align: left;
+    line-height: 1.25rem;
+}
+.for-more p{
+    font-size: 14px;
+
+}
+.for-more h5{
+    padding: 8px 0;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+
+/* BASE LIST */
+
+
+.footer{
+    text-align: left;
+    text-transform: capitalize;
+    padding: 10px 0;
+    margin: 0 20px;
+}
+.email-form{
+    padding: 10px;
+    border: 1px solid rgb(197, 194, 194);
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+
+}
+.email-form input{
+    border: none;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+}
+.col li{
+    display: block;
+    padding: 4px;
+    font-weight: lighter;
+}
+h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+.contact-details{
+    display: flex;
+    padding-top: 50px;
+}
+.contact{
+    padding-right: 40px;
+}
+.contact-details a{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.contact-details a:hover{
+    color: rgb(245, 139, 125);
+    
+}
+
+
+/* COPYRIGHT */
+
+
+.copyright{
+display: flex;
+justify-content: space-between;
+padding:20px 15px ;
+}
+.copyright p{
+    font-size: 12px
+}
+.icons a{
+    padding-right: 40px;
+    font-size: 20px;
+    color:rgb(27, 27, 27);
+}
+hr{
+    border-top: 0.1px solid rgb(228, 226, 226);
+    
+}
