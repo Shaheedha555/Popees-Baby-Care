@@ -395,6 +395,7 @@ color: rgb(124, 121, 121);
 }
 .email-form input{
     border: none;
+    outline:none;
 }
 .lists{
     display: flex;
